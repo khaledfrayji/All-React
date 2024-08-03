@@ -1,0 +1,119 @@
+.about {
+    text-align: center;
+  }
+  .about p{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 0 10px 0 10px;
+  max-width: 600px; 
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.4rem; 
+  line-height: 1.5;
+  color: #333; 
+  }
+.about-elements {
+  display: flex;
+  padding-top: 80px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+.about-elements h1 {
+  padding: 20px;
+  color: #75473d;
+  font-size: 6rem;
+}
+.about-elements i {
+  font-size: 50px;
+  margin: 20px;
+  animation: bounce 1s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .about-grid-elements {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust the percentage and gap */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 550px;
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+    .about-grid{
+        flex-direction: column;
+      }
+      .about-grid-elements {
+        width: 100%;
+        min-height: 450px;
+      }
+      
+  }
+  
+
+
+.about-grid-elements h2,
+.about-grid-elements p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: left;
+}
+
+/* Background images for each div */
+.cosmetic-dentistry {
+  background-image: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(76, 76, 76, 0.25) 60%, rgb(0, 0, 0) 100%), url("https://www.perlsmile.co/wp-content/uploads/2022/09/Perl-cosmetic.jpg");
+}
+
+.family-dentistry {
+  background-image:linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(76, 76, 76, 0.25) 60%, rgb(0, 0, 0) 100%), url("https://www.perlsmile.co/wp-content/uploads/2022/09/Perl-family.jpg");
+}
+
+.general-dentistry {
+  background-image:linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(76, 76, 76, 0.25) 60%, rgb(0, 0, 0) 100%), url("https://www.perlsmile.co/wp-content/uploads/2022/09/Perl-general.jpg");
+}
+
+@media (max-width: 768px) {
+  .about-elements {
+    flex-direction: column;
+  }
+  .about-elements h1 {
+    margin-right: 0px;
+    font-size: 2rem;
+  }
+ 
+}
+@media (max-width:1070px) {
+    .about-elements h1 {
+        margin-right: 0px;
+        font-size: 3rem;
+      }
+}

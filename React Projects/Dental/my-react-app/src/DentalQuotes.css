@@ -1,0 +1,48 @@
+.dental-quotes {
+  margin: 30px 0 30px 0;
+    text-align: center;
+    height: 200px;
+}
+
+.quote-container {
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+.dental-quotes h1{
+font-family: cursive;
+color: var(--my-brown);
+max-width: 400px;
+margin: auto;
+}
+.dental-quotes img{
+    width: 50px;
+}
+.quote-container:hover {
+    transform: scale(1.05);
+}
+
+.quote {
+    font-size: 1.5rem;
+    color: #333;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quote-container {
+        max-width: 90%;
+    }
+
+    .quote {
+        font-size: 1.2rem;
+    }
+    .dental-quotes h1{
+        max-width: 370px;
+    }
+    .dental-quotes {
+        margin: 30px 0 80px 0;
+    }
+}

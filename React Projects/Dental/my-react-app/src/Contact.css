@@ -1,0 +1,64 @@
+.contact-section{
+    background: linear-gradient(to right, #422d11, #7a3d12);
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+  margin-bottom: 20px;
+}
+.contact-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 400px;
+  height: 180px;
+}
+.contact-elements i {
+  color: #fff;
+}
+.contact-elements h1 {
+  color: #fff;
+  font-weight: 300;
+}
+.contact-elements a {
+  text-decoration: none;
+  color: #fff;
+}
+.contact-email {
+  display: flex;
+  gap: 5px;
+}
+.contact-email p {
+  color: #fff;
+}
+.contact hr {
+  width: 200px;
+}
+.social-media {
+  display: flex;
+  gap: 20px;
+  font-size: 2rem;
+}
+.copy-rights{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+    border-top: 1px solid #ffffff33;
+}
+.copy-rights p{
+    color: white;
+    font-size: 15px;
+}
+@media (max-width:800px){
+    .contact{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .copy-rights p{
+        font-size: 11px;
+    }
+}
